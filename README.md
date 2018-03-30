@@ -1,6 +1,6 @@
 # Overtime App
 
-##Key Requirements : Company needs documentation that salaried ##employees did or did not get overtime each week
+## Key Requirements : Company needs documentation that salaried ##employees did or did not get overtime each week
 
 ## Models
 -Post -> date:date rationale:text
@@ -15,4 +15,4 @@
 -Needs to be documented if employer did not log overtime
 
 ## UI:
-Boostrap -> Formatting
+-Boostrap -> Formatting
