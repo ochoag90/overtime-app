@@ -53,6 +53,7 @@ group :development do
 end
 
 gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
