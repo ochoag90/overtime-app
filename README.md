@@ -18,3 +18,6 @@
 
 ## UI:
 * Boostrap -> Formatting
+
+
+## Refactor TODOS:
