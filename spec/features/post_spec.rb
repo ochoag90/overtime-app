@@ -5,7 +5,6 @@ describe 'navigate' do
   before do
     user = User.create(email:"test@test.com",password: "abcdef", password_confirmation: "abcdef", first_name: "John", last_name: "Snow")
     login_as(user, :scope => :user)
-
   end 
 
 	describe 'index' do
@@ -14,18 +13,21 @@ describe 'navigate' do
     end
 
 		it 'can be reached successfully' do
-			visit posts_path
+			# visit posts_path
 			expect(page.status_code).to eq(200)
     	end
 
     	it 'has a title of Posts' do
-			visit posts_path
+			# visit posts_path
 			expect(page).to have_content(/Posts/)
     	end
 
-      it 'has a list of posts' do
-        post1 = Post.create(date: Date.today, rationale: "Post1")
-        post2 = Post.create(date: Date.today, rationale: "Post2")
+      it 'has a list of Posts' do
+        user = User.create(id: 2, first_name: "John", last_name: "Smith", email: "abcd@abcd.com", password: "abcdef", password_confirmation: "abcdef")
+        post1 = Post.new(id: 2, date: Date.today, rationale: "Post1", user_id: 2)
+        post1.save
+        post2 = Post.new(id: 3, date: Date.today, rationale: "Post2", user_id: 2)
+        post2.save
         visit posts_path
         expect(page).to have_content(/Post1|Post2/)
       end 
@@ -53,7 +55,6 @@ describe 'navigate' do
   		fill_in 'post[date]', with: Date.today
   		fill_in 'post[rationale]', with: 'User Association'
   		click_on "save"
-
   		expect(User.last.posts.last.rationale).to eq("User Association")
   	end
   end
