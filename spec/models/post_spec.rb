@@ -4,8 +4,9 @@ RSpec.describe Post, type: :model do
   describe "Creation" do
 
   	before do
-      user = User.create(email: "testpost@test.com", password: "abcdefg", password_confirmation: "abcdefg", first_name: "test", last_name: "test")
-  		@post = Post.create!(date: Date.today, rationale: "Anything", user_id: user.id)
+      # user = User.create(email: "testpost@test.com", password: "abcdefg", password_confirmation: "abcdefg", first_name: "test", last_name: "test")
+  		# @post = Post.create!(date: Date.today, rationale: "Anything", user_id: user.id)
+      @post = FactoryBot.create(:post)
   	end 
 
   	it 'can be created' do

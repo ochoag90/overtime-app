@@ -6,7 +6,7 @@
 
 *  X Post -> date:date rationale:text
 *  X User -> Devise
-* AdminUser - STI
+*  X AdminUser - STI
 
 
 ## Features:
