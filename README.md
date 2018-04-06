@@ -4,9 +4,9 @@
 
 ## Models
 
-* Post -> date:date rationale:text
-* User -> Devise
-* AdminUser - STI
+*  X Post -> date:date rationale:text
+*  X User -> Devise
+*  X AdminUser - STI
 
 
 ## Features:
@@ -18,3 +18,8 @@
 
 ## UI:
 * Boostrap -> Formatting
+
+
+## Refactor TODOS:
+* Add full name method for users
+* Refactor user Association integration with rspec
