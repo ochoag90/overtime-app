@@ -18,8 +18,8 @@
 
 ## UI:
 *  X Boostrap -> Formatting
-* icons from font awesome
-* Update the styles for forms
+*  Icons from font awesome
+*  X Update the styles for forms
 
 
 ## Refactor TODOS:
