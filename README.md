@@ -17,7 +17,9 @@
 * Needs to be documented if employer did not log overtime
 
 ## UI:
-* Boostrap -> Formatting
+*  X Boostrap -> Formatting
+* icons from font awesome
+* Update the styles for forms
 
 
 ## Refactor TODOS:
