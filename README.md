@@ -11,7 +11,7 @@
 
 ## Features:
 * Approval Workflow
-
+* Block non admin and guest: users
 * SMS Sending -> link to approval or overtime input
 * Administrate to managers for approval
 * Needs to be documented if employer did not log overtime
