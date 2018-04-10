@@ -40,6 +40,7 @@ class AdminUserDashboard < Administrate::BaseDashboard
     :created_at,
     :updated_at,
     :type,
+
   ].freeze
 
   FORM_ATTRIBUTES = [
