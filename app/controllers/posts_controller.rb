@@ -46,6 +46,7 @@ class PostsController < ApplicationController
 	private
 
 	  def post_params
+	  	#Strong params used to submit form, will not change DB if not explicitly passed
 	  	params.require(:post).permit(:date, :rationale, :status)
 	  end
 

@@ -26,3 +26,4 @@
 ## Refactor TODOS:
 * Add full name method for users
 * Refactor user Association integration with rspec
+* Refactor posts/_form for admin  wth status
