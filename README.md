@@ -27,3 +27,4 @@
 * Add full name method for users
 * Refactor user Association integration with rspec
 * Refactor posts/_form for admin  wth status
+* Fix post_spec.rb: 81
