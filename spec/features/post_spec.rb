@@ -3,8 +3,8 @@ require 'rails_helper'
 describe 'navigate' do
 
   before do
-    user = FactoryBot.create(:user)
-    login_as(user, :scope => :user)
+    @user = FactoryBot.create(:user)
+    login_as(@user, :scope => :user)
   end 
 
 	describe 'index' do
@@ -30,6 +30,26 @@ describe 'navigate' do
         expect(page).to have_content(/Rationale|Content/)
       end 
   end
+
+  describe 'new' do
+    it 'has a link from the homepage' do
+        visit root_path
+
+      click_link("new_post_from_nav")
+      expect(page.status_code).to eq(200)
+    end
+  end 
+
+  describe 'delete' do
+    it 'can be deleted' do
+      @post = FactoryBot.create(:post)
+      visit posts_path
+
+      click_link("delete_post_#{@post.id}_from_index")
+      expect(page.status_code).to eq(200)
+    end 
+  end 
+
 
   describe 'creation' do
 
@@ -58,24 +78,39 @@ describe 'navigate' do
   end
   describe 'edit' do
     before do
-      @post = FactoryBot.create(:post)
+      @edit_user = User.create(first_name: "Ana", last_name: "Ochoa", email: 'test1@test.com', password: "abcdef", password_confirmation: "abcdef")
+      login_as(@edit_user, :scope => :user)
+      @edit_post = Post.create(date: Date.today, rationale: "Comment Here", user_id: @edit_user.id)
     end 
 
-    it 'can be reached by clicking edit on index page' do
-      visit posts_path
+    #Tests below this commented test are already checking page status
 
-      click_link("edit_#{@post.id}")
-      expect(page.status_code).to eq(200)
-    end 
+    # it 'can be reached by clicking edit on index page' do
+    #   visit posts_path
+
+    #   click_link("edit_#{@post.id}")
+    #   expect(page.status_code).to eq(200)
+    # end 
 
     it 'can be edited' do
-      visit edit_post_path(@post)
+      visit edit_post_path(@edit_post)
       
       fill_in 'post[date]', with: Date.today
       fill_in 'post[rationale]', with: 'Edited Content'
       click_on "save"
 
       expect(page).to have_content("Edited Content")
+    end 
+
+    it 'cannot be edited by a non authorized user' do
+      logout(:user)
+
+      non_authorized_user = FactoryBot.create(:non_authorized_user)
+      login_as(non_authorized_user, :scope => :user)
+
+      visit edit_post_path(@edit_post)
+
+      expect(current_path).to eq(root_path)
     end 
   end 
 end
