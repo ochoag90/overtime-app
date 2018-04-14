@@ -7,6 +7,7 @@
 *  X Post -> date:date rationale:text
 *  X User -> Devise
 *  X AdminUser - STI
+*    AuditLog
 
 
 ## Features:
@@ -19,9 +20,9 @@
 
 ## UI:
 *  X Boostrap -> Formatting
-*  Icons from font awesome
+*  X Icons from glyphicons
 *  X Update the styles for forms
 
 
 ## Refactor TODOS:
-* Refactor posts/_form for admin user with status
+*  X Refactor posts/_form for admin user with status
