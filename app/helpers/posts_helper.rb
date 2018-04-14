@@ -3,7 +3,6 @@ module PostsHelper
 		status_span_generator status
 	end 
 
-
 private 
 
 	def status_span_generator status
