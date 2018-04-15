@@ -12,11 +12,21 @@ RSpec.describe User, type: :model do
   		expect(@user).to be_valid
   	end 
 
-  	it "can not be created without first_name, last_name" do
+  	it "can not be created without a first_name" do
   		@user.first_name = nil
-  		@user.last_name = nil
   		expect(@user).to_not be_valid
   	end 
+
+    it "can not be created without a last_name" do
+      @user.last_name = nil
+      expect(@user).to_not be_valid
+    end
+
+    it "can not be created without a phone" do
+      @user.phone = nil
+      expect(@user).to_not be_valid
+    end
+
   end 
 
   describe "custom name methods" do
