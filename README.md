@@ -25,4 +25,4 @@
 
 
 ## Refactor TODOS:
-*  X Refactor posts/_form for admin user with status
+*  Integrate validation for phone attribute for user
