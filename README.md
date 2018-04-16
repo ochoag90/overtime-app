@@ -18,11 +18,4 @@
 * Administrate to managers for approval
 * Needs to be documented if employer did not log overtime
 
-## UI:
-*  X Boostrap -> Formatting
-*  X Icons from glyphicons
-*  X Update the styles for forms
-
-
 ## Refactor TODOS:
-*  Integrate validation for phone attribute for user
