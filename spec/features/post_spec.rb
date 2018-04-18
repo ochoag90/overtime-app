@@ -59,7 +59,7 @@ describe 'navigate' do
     it 'can be deleted' do
       logout(:user)
       delete_user = FactoryBot.create(:user)
-      login_as(delete_user, :scope => :admin_user)
+      login_as(delete_user, :scope => :user)
 
       post_to_delete = Post.create(date: Date.today, rationale: "rationale", user_id: delete_user.id, overtime_request: 3.5)
 
