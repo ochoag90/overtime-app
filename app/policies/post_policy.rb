@@ -1,8 +1,13 @@
 class PostPolicy < ApplicationPolicy
+
 	def update?
 		#case 1 = user of record
 		return true if post_approved? && admin?
 		return true if user_or_admin &&	!record.approved?
+	end
+
+	def approve?
+		admin?
 	end
 
 	private
