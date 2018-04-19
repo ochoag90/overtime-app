@@ -1,0 +1,36 @@
+.pending-homepage {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #E3E3E3;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+
+.homepage-block {
+	background-color: #825d7d;
+	color: white;
+	margin: 10px 42px;
+	padding: 35px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.pending-details {
+	font-weight: 600;
+}
+
+.center-all-items {
+	width: 100%;
+	border: dotted;
+	border-color: white;
+	padding-left: 40%;
+	content: center;
+}
+
+.homepage-block:hover {
+	background-color: #72526e
+}
