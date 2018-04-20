@@ -1,5 +1,4 @@
 require "administrate/base_dashboard"
-require "bourbon"
 
 class PostDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
