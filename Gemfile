@@ -68,3 +68,4 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'kaminari', '~> 1.1', '>= 1.1.1' #keep kaminari 1.1.1
 gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
