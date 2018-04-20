@@ -11,7 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+<<<<<<< HEAD
 
+=======
+>>>>>>> 353c9f8fa0159390d2d8f976de6d6c39930817d8
 //= require bootstrap-sprockets
 //= require gritter
 //= require jquery_ujs
