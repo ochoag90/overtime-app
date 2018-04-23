@@ -11,13 +11,6 @@ namespace :notification do
     end
   end 
 
-	###
-
-  	# number: "5555555555"
-  	# No spaces or dashes
-  	# exactly 10 characters
-  	# all characters have to be a number
-
     desc "Sends email notification to managers each day to inform of pending overtime requests"
     task manager_email: :environment do
     # 1. Iterate over the pending overtime requests
