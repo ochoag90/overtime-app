@@ -12,7 +12,7 @@
 					password_confirmation: "abcdef",
 					first_name: "John", 
 					last_name: "Snow",
-					phone:"7815263281")
+					phone:"6179413379")
 
 puts "1 employee has been created"
 
