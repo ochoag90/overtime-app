@@ -11,17 +11,16 @@
 
 
 ## Features:
-* Approval Workflow
+* X Approval Workflow
 * X Block non admin and guest: users
 * X Administrate admin dashboard
-* SMS Sending -> link to approval or overtime input -> integrate with Heroku Scheduler
-* Administrate to managers for approval
-* Needs to be documented if employer did not log overtime
-* Update Employees buttons
-* Sort order for homepage buttons
-* Remove uneccesary buttons for Admin Homepage
-* Fix admin dashboard bug
-* Implement Honeybadger for error reporting
+* X SMS Sending -> link to approval or overtime input -> integrate with Heroku Scheduler
+* X Administrate to managers for approval
+* X Needs to be documented if employer did not log overtime
+* X Update Employees buttons
+* X Sort order for homepage buttons
+* X Remove uneccesary buttons for Admin Homepage
+* X Fix admin dashboard bug
 * Implment new relic for keeping site alive
 
 ## Refactor TODOS:
