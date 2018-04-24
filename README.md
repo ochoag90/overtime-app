@@ -21,6 +21,6 @@
 * X Sort order for homepage buttons
 * X Remove uneccesary buttons for Admin Homepage
 * X Fix admin dashboard bug
-* Implment new relic for keeping site alive
+* X Implment new relic for keeping site alive
 
 ## Refactor TODOS:
